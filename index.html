@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
-        
-    <h2>Simple subtraction question.</h2>
-    <p>What's two minus one?</p>
-    
-    <button type="button" onclick="document.write(2-1)">Reveal Answer</button>
-    
-    <script src="app.js"></script>
+<h1>What is the time and date?</h1>
+<h2>Click the button below to find out!</h2>
 
+<button onclick="document.getElementById('demo').innerHTML=Date()">Click me!</button>
+
+<p id="demo"></p>
+<script src="app.js"></script>
 </body>
 </html>
