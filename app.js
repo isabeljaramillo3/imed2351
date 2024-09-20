@@ -1,45 +1,44 @@
-const name = "hello"
+//if condtional statement
+const age = 26
 
-//FUNCTION NUMB1 addition
-function hello1(parameter1, parameter2){
-   console.log(parameter1 + parameter2);
- 
+if(age>28){
+   console.log("You are older than 28.")
+} else if (age < 25){
+   console.log("You are younger than 25.")
 }
-hello1(25,49);
+
+   else{ console.log("You are older than 21.")}
 
 
-//FUNCTION NUMB2 subtraction
-function hello2(parameter3, parameter4){
-    console.log(parameter3 - parameter4);
-  
- }
- hello2(185,58);
+//concatenated string
+const name = "IMED2351";
+const year = 2024;
 
- //FUNCTION NUMB3 division
-function hello3(parameter5, parameter6){
-    console.log(parameter5 / parameter6);
-  
- }
- hello3(10,2);
+console.log(`Hello this class is called ${name} and the year is ${year}.`);
 
- 
-//OBJECTS 
+const combined = name + year;
+console.log(combined);
 
- const person = {
-    firstName: "Mickey",
-    lastName: "Mouse",
-    age: 95,
-    isMouse: true,
+//switch statement
+let day = 2;
+let dayName;
 
- }
- 
- console.log(person.firstName);
- console.log(person.lastName);
+switch (day){
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+}
+console.log(dayName); 
 
-//METHOD
-
-let userName = "northwest vista";
-
-userName = userName.toUpperCase();
-
-console.log(userName);
+//number method
+const PI = 3.1415
+   const num = PI.toFixed(3);
+      console.log(num);
