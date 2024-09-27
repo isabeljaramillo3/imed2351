@@ -1,11 +1,11 @@
 // FOR LOOP
 
-const names = ["skibbi", "tolwe", "John", "Pork"];
+const names = ["One", "Two", "Three", "Four", "Five", "Six"];
 
 for(name of names){
     console.log(name);
-    if (name === "Pork" ){
-        console.log("Mr.Pork is calling!");
+    if (name === "Six" ){
+        console.log("There are six US states listed.");
     }
 }
 
@@ -17,6 +17,31 @@ while(loading < 100){
     loading++;
 
 }
+
+//dom manipulation
+
+
+//
+const userList = document.querySelectorAll('.name-list li');
+
+for(user of userList){
+    user.addEventListener('click', function(){
+        this.style.color = 'pink';
+    });
+}
+
+
+//
+console.log(userList);
+
+const text = document.querySelector(".title");
+const changeColor = document.querySelector(".changeColor");
+
+text.style.color = "blue";
+
+//
+
+
 
 
 
