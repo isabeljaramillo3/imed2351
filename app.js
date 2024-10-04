@@ -1,48 +1,50 @@
-// FOR LOOP
+//array 1, schedule
 
-const names = ["One", "Two", "Three", "Four", "Five", "Six"];
+const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday"];
 
-for(name of names){
-    console.log(name);
-    if (name === "Six" ){
-        console.log("There are six US states listed.");
+weekdays.push('Friday');
+
+console.log(weekdays);
+
+//array 2, numbers
+
+const numbers = ["123", "124", "125", "126"];
+
+numbers.unshift(127);
+
+console.log(numbers);
+
+
+//array 3
+const fruits = ["Apples", "Grapes", "Strawberries"];
+
+fruits.push("Kiwi");
+
+console.log(fruits);
+
+//object method
+const user = {
+    name:"Jane",
+    age: 35,
+    children: ["John", "Jack", "Jennifer"],
+
+    sayName: function(){
+        console.log(this);
     }
+
+};
+
+user.sayName();
+
+
+//object method 2
+
+const player = {
+    name: "Mario",
+    age: 43,
+    brother: "Luigi",
 }
 
-//WHILE LOOP
-let loading = 0;
-while(loading < 100){
-    console.log('Website is still loading');
-
-    loading++;
-
-}
-
-//dom manipulation
-
-
-//
-const userList = document.querySelectorAll('.name-list li');
-
-for(user of userList){
-    user.addEventListener('click', function(){
-        this.style.color = 'pink';
-    });
-}
-
-
-//
-console.log(userList);
-
-const text = document.querySelector(".title");
-const changeColor = document.querySelector(".changeColor");
-
-text.style.color = "blue";
-
-//
-
-
-
-
+console.log(player);
 
 
